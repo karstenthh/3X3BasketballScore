@@ -1,0 +1,61 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=h1, initial-scale=1.0">
+        <title>3x3 Basketball Score Keeper</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    </head>
+    <body>
+        
+        <section class="section">
+    
+    <div class="container">
+        <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+                <div class="image">
+                    <figure class="image is-2by1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS5A5w83gMmmoOecmgrv8XyXCf-Ro40UWnYQ&s" alt="">
+                    </figure>
+                </div>
+                <header class="card-header">
+                <p class="card-header-title">3X3 Basketball Score Keeper</p>
+                </header>
+                
+                <div class="card-content">
+                    <h1 class="title is-1"> <span id="p1Display">0</span> vs <span id="p2Display">0</span></h1>
+                
+
+                    <h2 class="title is-4 mt-1">Time Left: <span id="timer">10:00</span></h2>
+                    <div class="buttons">
+                        <button id="startTimer" class="button is-success"><i style="font-size:24px" class="fa">&#xf04b;</i></button>
+                        <button id="stopTimer" class="button is-info"><i style="font-size:24px" class="fa">&#xf04c;</i>
+                        </button>
+                        <button id="endTimer" class="button is-danger"><i style="font-size:24px" class="fa">&#xf04d;</i></button>
+                    </div>
+                    <label for="gameto" class="label is-large is-inline">Game To</label>
+                    <div class="select is-rounded"> 
+                        <select name="" id="gameto">
+                            <option value="7">7</option>
+                            <option value="15">15</option>
+                            <option value="21">21</option>
+                        </select>
+                    </div>
+                    <p class="subtitle">Use the buttons below to keep score</p> 
+                </div>
+                
+                <footer class="card-footer">
+                    <button id="p1btn" class="is-primary button card-footer-item">+1 Team 1</button>
+                    <button id="p2btn" class="is-info button card-footer-item">+1 Team 2</button>
+                    <button id="resetbtn" class="is-danger button card-footer-item">reset</button>
+                
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    </section>
+    </body>
+    </html>
